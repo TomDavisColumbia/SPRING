@@ -13,11 +13,14 @@
         // Add a Chart that displays your data
         // Add Rows and Columns
         var data = new google.visualization.DataTable();
-        
+        // I want tell Aptana that my social media sites are platforms
+        // I want each bar to indicate that it resembles percentage of adults using Social Media
         data.addColumn('string', 'Platforms');
-        
         data.addColumn('number', '% of Adults');
         data.addRows([
+        // Below I want to now show my social media sites
+        // Along with the social media sites - I want the percentage to portray adults using the site
+        // Once I added my percentages, I closed the categories so that I can indicate the style
           ['Twitter', 23],
           ['Instagram', 26],
           ['Pinterest', 28],
@@ -32,13 +35,14 @@
                        'hAxis':{}
                      };
                      
- 
+ // Here is where I will begin to style my chart
+ // I want the color green
                    
 
 var chartTextStyle = { 
-'color': '#FF0000',
+'color': '#009900',
 'fontName': "Helvetica",
-'fontSize': 12,
+'fontSize': 41,
 'bold': true,
 'italic': false
 
