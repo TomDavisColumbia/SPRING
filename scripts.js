@@ -49,7 +49,7 @@ var chartTextStyle = {
         },
         vAxis: {
           title: 'Platforms'
-        }
+        } 
       };
       
       options.hAxis.textStyle = chartTextStyle;
