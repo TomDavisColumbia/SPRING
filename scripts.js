@@ -1,3 +1,13 @@
+var chartTextStyle = { 
+'color': '#009900',
+'fontName': "Helvetica",
+'fontSize': 41,
+'bold': true,
+'italic': false
+
+}; 
+
+
 // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
 
@@ -29,37 +39,39 @@
         ]);
 
         // Set chart options
-        var options = {'title':'How Many Adults are Using Social Platforms?',
-                       'width':700,
-                       'height':400,
-                       'hAxis':{}
-                     };
+     var options = {
+        title: '% of Adults on Social Media',
+        width: 900,
+        height: 763,
+        hAxis: {
+          title: 'Percentage of Adults',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Platforms'
+        }
+      };
+      
+      options.hAxis.textStyle = chartTextStyle;
+      console.log(options.height)
+     
                      
  // Here is where I will begin to style my chart
  // I want the color green
-                   
-
-var chartTextStyle = { 
-'color': '#009900',
-'fontName': "Helvetica",
-'fontSize': 41,
-'bold': true,
-'italic': false
-
-};   
+  
           
        options.hAxis.chart         
                
-                     
+        // Per Dona Wong, I made my chart begin with zero             
         options.hAxis.minValue = 0; 
   
   /*      
                var data = google.visualization.arrayToDataTable([
-         ['Element', '% of Adults', { role: 'style' }, { role: 'annotation' } ],
-         ['Copper', 8.94, '#b87333', 'Cu' ],
-         ['Silver', 10.49, 'silver', 'Ag' ],
-         ['Gold', 19.30, 'gold', 'Au' ],
-         ['Platinum', 21.45, 'color: #e5e4e2', 'Pt' ]
+         ['Twitter', '% of Adults', { role: 'style' }, { role: 'annotation' } ],
+         ['Instagram', 8.94, '#b87333', 'Cu' ],
+         ['Pinterest', 10.49, 'silver', 'Ag' ],
+         ['LinkedIn', 19.30, 'gold', 'Au' ],
+         ['FB', 21.45, 'color: #e5e4e2', 'Pt' ]
       ]);
         
         */
