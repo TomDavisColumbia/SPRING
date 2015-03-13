@@ -1,9 +1,17 @@
+*/
+I used a column chart because I feel it best displays the ranking of social media sites being used by a certain percentage of adults
+My Username on GitHub is TomDavisColumbia
+
+
+/*
+
+
 var chartTextStyle = { 
-'color': '#009900',
+'color': '#FF99FF', // Changed my color twice since I figured out how to actually do it
 'fontName': "Helvetica",
-'fontSize': 41,
-'bold': true,
-'italic': false
+'fontSize': 21, // lowered my font size from 40 - it was too large
+'bold': false,  // unneccessary to make it bold
+'italic': true // italics 
 
 }; 
 
@@ -27,6 +35,7 @@ var chartTextStyle = {
         // I want each bar to indicate that it resembles percentage of adults using Social Media
         data.addColumn('string', 'Platforms');
         data.addColumn('number', '% of Adults');
+        // Didn't add percentage sign because the lable beneath the numbers describes that it's percent of adults
         data.addRows([
         // Below I want to now show my social media sites
         // Along with the social media sites - I want the percentage to portray adults using the site
@@ -36,7 +45,7 @@ var chartTextStyle = {
           ['Pinterest', 28],
           ['LinkedIn', 28],
           ['FB', 56]
-        ]);
+        ]); // here are my 5 social media sites
 
         // Set chart options
      var options = {
@@ -48,7 +57,7 @@ var chartTextStyle = {
           minValue: 0
         },
         vAxis: {
-          title: 'Platforms'
+          title: 'Platforms' // this is what I labled my hAxis
         } 
       };
       
@@ -57,13 +66,13 @@ var chartTextStyle = {
      
                      
  // Here is where I will begin to style my chart
- // I want the color green
+ // I want the color pink
   
           
        options.hAxis.chart         
                
         // Per Dona Wong, I made my chart begin with zero             
-        options.hAxis.minValue = 0; 
+        options.hAxis.minValue = 0; // as per Dona Wong
   
   /*      
                var data = google.visualization.arrayToDataTable([
